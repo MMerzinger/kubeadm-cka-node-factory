@@ -2,7 +2,7 @@
 
 This repo is part of my blog post  [How I prepared for the CKA exam](https://acloudjourney.io/blog/how-i-prepared-for-the-cka-exam). 
 
-This repo contains small helper scripts to setup virtual machines on GCP, that have all dependencies for a K8s node preinstalled. These dependencies are listed in the [K8s documentation](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) for creating clusters with Kubeadm.
+This repo contains small helper scripts to setup virtual machines on GCP, that have all dependencies for a K8s node preinstalled. These dependencies are listed in the [K8s documentation](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) for creating clusters with Kubeadm. The `setup-vm.sh` script is based on the snippets found on the K8s docs page with slight modifications.
 
 Make sure to set a default region and zone with `gcloud config set compute/region <REGION>` respectively `gcloud config set compute/zone <ZONE>`.
 
@@ -15,6 +15,8 @@ The objective of these scripts is to help you to bootstrap K8s clusters and expe
 ## Hints
 
 The CIDR of my regional subnet was 10.172.0.0/20. Make sure you use a CIDR in your network that does not overlap with the CIDRs used in this repo.
+
+This setup uses Kubernetes 1.20.1. You may need to use a newer version as releases are published frequently. Make sure to use the correct version for your exam.
 
 ## Cluster Setup
 
