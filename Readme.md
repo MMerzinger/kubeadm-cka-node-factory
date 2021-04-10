@@ -183,3 +183,7 @@ gcloud compute instances delete k8s-master k8s-worker{0..2}
 ## Important Notes
 
 This repo was used to prepare for the CKA exam or just to experiment with Kubeadm cluster. You can find my blog post to this repo [here](https://acloudjourney.io/blog/how-i-prepared-for-the-cka-exam). These scripts are just a collection of commands that you can find in the K8s docs, to simplify cluster setup. Please adapt and use them to prepare yourself for the CKA exam as well. I do not provide any kind of support to these scripts.
+
+## License
+
+MIT: https://marcm.mit-license.org
